@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        #wang{width:330px;height:100px;margin:10px auto;}
+        #wang div{float:left;width:100px;height:100px;margin:0 5px;background:black;}
+
+    </style>
+</head>
+<body>
+<button>点击</button>
+<div id="wang">
+    <div></div>
+    <div></div>
+    <div></div>
+</div>
+
+
+<script>
+    window.onload = function () {
+        var one = document.getElementById("wang").getElementsByTagName("div");
+        var two = document.getElementsByName("button")[0];
+        two.onclick = function () {
+            for(var i = 0; i<one.length ; i++)one[i].style.background = "red";
+
+        }
+    }
+</script>
+</body>
+</html>
